@@ -111,8 +111,14 @@
   <allow-navigation href="http://*/*" />
   <platform name="android">
     <allow-intent href="market:*"/>
-    <custom-preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Black.NoTitleBar" />
+    <custom-preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Light.NoTitleBar.Fullscreen" />
   </platform>
+  <config-file platform="android" parent="/manifest" mode="merge">
+    <supports-screens
+      android:xlargeScreens="false"
+      android:largeScreens="false"
+      android:smallScreens="false" />
+  </config-file>
   <platform name="ios">
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
