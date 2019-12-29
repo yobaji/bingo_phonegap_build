@@ -112,7 +112,9 @@
     <allow-intent href="market:*"/>
   </platform>
   <config-file platform="android" parent="/manifest" mode="merge">
-    
+    <application android:theme="@android:style/Theme.NoTitleBar" >
+      <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+    </application>
   </config-file>
   <platform name="ios">
     <allow-intent href="itms:*"/>
