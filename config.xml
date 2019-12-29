@@ -109,8 +109,7 @@
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>
-  <config-file platform="android" parent="/manifest" mode="merge">    
-    <activity android:theme="@android:style/Theme.Translucent"></activity>
+  <config-file platform="android" parent="/manifest" mode="merge">
   </config-file>
   <platform name="ios">
     <allow-intent href="itms:*"/>
