@@ -8,7 +8,6 @@
   <preference name="android-minSdkVersion" value="17" />
   <preference name="StatusBarOverlaysWebView" value="true" />
   <preference name="StatusBarStyle" value="lightcontent" />
-  <preference name="StatusBarBackgroundColor" value="#ffffff" />
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.4"/>
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <plugin name="cordova-plugin-statusbar" source="npm" />
