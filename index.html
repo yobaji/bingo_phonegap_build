@@ -22,10 +22,6 @@
          document.addEventListener("deviceready", onDeviceReady, false);
          function onDeviceReady() {
             AndroidFullScreen.immersiveMode();
-            navigator.splashscreen.show();
-            window.setTimeout(function () {
-               navigator.splashscreen.hide();
-            }, 3000);
          }  
       </script>
    </body>
