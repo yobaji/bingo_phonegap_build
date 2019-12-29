@@ -6,6 +6,7 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="AndroidLaunchMode" value="singleTop"/>
   <preference name="android-minSdkVersion" value="17" />
+  <preference name="StatusBarBackgroundColor" value="#ffffff" />
   <plugin name="cordova-plugin-battery-status" source="npm" spec="~1.2.4"/>
   <plugin name="cordova-plugin-whitelist" source="npm" />
   <plugin name="cordova-plugin-device" source="npm" spec="~1.1.6"/>
