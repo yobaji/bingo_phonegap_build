@@ -112,10 +112,7 @@
     <allow-intent href="market:*"/>
   </platform>
   <config-file platform="android" parent="/manifest" mode="merge">
-    <supports-screens
-      android:xlargeScreens="false"
-      android:largeScreens="false"
-      android:smallScreens="false" />
+    
   </config-file>
   <platform name="ios">
     <allow-intent href="itms:*"/>
