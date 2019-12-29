@@ -11,8 +11,8 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="AndroidLaunchMode" value="singleTop"/>
   <preference name="android-minSdkVersion" value="17" />
-  <preference name="Fullscreen" value="true" />
-  <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.NoTitleBar"/>
+  <preference name="Fullscreen" value="false" />
+  <preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.NoTitleBar.Fullscreen"/>
   <plugin name="cordova-custom-config" />
   <plugin name="cordova-plugin-device" spec="1.1.7" />
   <plugin name="cordova-plugin-dialogs" spec="1.3.4" />
