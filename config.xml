@@ -111,7 +111,7 @@
   <allow-navigation href="http://*/*" />
   <platform name="android">
     <allow-intent href="market:*"/>
-    <custom-preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Translucent" />
+    <custom-preference name="android-manifest/application/activity/@android:theme" value="@android:style/Theme.Black.NoTitleBar" />
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
