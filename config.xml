@@ -7,6 +7,7 @@
   <preference name="AndroidLaunchMode" value="singleTop"/>
   <preference name="android-minSdkVersion" value="17" />
   <preference name="Fullscreen" value="true" />
+  <preference name="SplashScreen" value="screen"/>
   <preference name="AutoHideSplashScreen" value="true" />
   <preference name="SplashScreenDelay" value="3000" />
   <plugin name="cordova-plugin-device" spec="1.1.7" />
