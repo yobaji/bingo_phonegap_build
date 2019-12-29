@@ -112,8 +112,8 @@
     <allow-intent href="market:*"/>
   </platform>
   <config-file platform="android" parent="/manifest" mode="merge">
-    <application android:theme="@android:style/Theme.NoTitleBar" >
-      <activity android:theme="@android:style/Theme.NoTitleBar.Fullscreen" ></activity>
+    <application android:theme="@android:style/Theme.Translucent" >
+      <activity android:theme="@android:style/Theme.Translucent.NoActionBar" ></activity>
     </application>
   </config-file>
   <platform name="ios">
