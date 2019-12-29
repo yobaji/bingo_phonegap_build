@@ -10,6 +10,7 @@
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="AndroidLaunchMode" value="singleTop"/>
   <preference name="android-minSdkVersion" value="21" />
+  <preference name="android-targetSdkVersion" value="28" />
   <preference name="fullscreen" value="true" />
   <preference name="orientation" value="portrait" />
   <plugin name="cordova-plugin-device" spec="1.1.7" />
