@@ -18,5 +18,11 @@
       <script src=js/chunk-vendors.d9b1be14.js></script>
       <script src=js/app.8be27f88.js></script>
       <script src="cordova.js"></script>
+      <script>
+         if (cordova.platformId == 'android') {
+            StatusBar.overlaysWebView(true);
+            StatusBar.backgroundColorByHexString('#33000000');
+         }
+      </script>
    </body>
 </html>
