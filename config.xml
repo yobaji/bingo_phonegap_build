@@ -109,10 +109,6 @@
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>
-  <config-file platform="android" parent="/manifest" mode="merge">
-    <application android:theme="@style/AppTheme" >
-    </application>
-  </config-file>
   <platform name="ios">
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
