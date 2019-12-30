@@ -116,6 +116,18 @@
       <activity android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" ></activity>
     </application>
   </config-file>
+  <platform name="android">
+      <resource-file src="www/styles.xml" target="app/src/main/res/values-v28/styles.xml" />
+      <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
+          <application android:resizeableActivity="false"/>
+      </edit-config>
+      <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity">
+          <activity android:theme="@style/Full"/>
+      </edit-config>
+      <config-file parent="./application" target="AndroidManifest.xml">
+          <meta-data android:name="android.max_aspect" android:value="5.0" />
+      </config-file>
+  </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
     <allow-intent href="itms-apps:*"/>
