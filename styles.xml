@@ -1,5 +1,5 @@
 <resources>
-    <color name="status_background">#ffffff</color>
+    <color name="status_background">#cccccc</color>
     <color name="statusFont">#555555</color>
     <item name="android:statusBarColor">@color/status_background</item>
     <item name="android:navigationBarColor">@color/statusFont</item>
