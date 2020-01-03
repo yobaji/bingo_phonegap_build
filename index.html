@@ -21,9 +21,8 @@
       <script type="text/javascript" charset="utf-8">
          document.addEventListener("deviceready", onDeviceReady, false);
          function onDeviceReady() {
+            AndroidFullScreen.immersiveMode();
             navigator.splashscreen.hide();
-            StatusBar.overlaysWebView(false);
-            StatusBar.show();
          }
       </script>
    </body>
