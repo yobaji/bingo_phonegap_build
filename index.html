@@ -22,6 +22,7 @@
          document.addEventListener("deviceready", onDeviceReady, false);
          function onDeviceReady() {
             navigator.splashscreen.hide();
+            StatusBar.backgroundColorByName("white");
             StatusBar.overlaysWebView(false);
             StatusBar.show();
          }
