@@ -23,6 +23,9 @@
          function onDeviceReady() {
             AndroidFullScreen.immersiveMode();
             navigator.splashscreen.hide();
+            if (cordova.platformId == 'android') {
+               StatusBar.backgroundColorByHexString("#000");
+            }
          }
       </script>
    </body>
