@@ -6,6 +6,7 @@
   <preference name="SplashScreen" value="screen" />
   <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="SplashMaintainAspectRatio" value="true" />
+  <preference name="SplashScreenBackgroundColor" value="#ffffff" />
   <preference name="SplashStatusBarBackgroundColor" value="#ffffff" />
   <preference name="SplashNavigationBarBackgroundColor" value="#ffffff" />
   <preference name="HeaderColor" value="#ffffff" />
