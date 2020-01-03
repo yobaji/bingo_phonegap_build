@@ -7,6 +7,7 @@
   <preference name="ShowSplashScreenSpinner" value="false"/>
   <preference name="SplashMaintainAspectRatio" value="true" />
   <preference name="HeaderColor" value="#ffffff" />
+  <preference name="StatusBarBackgroundColor" value="#ffffff" />
   <preference name="AutoHideSplashScreen" value="false" />
   <preference name="DisallowOverscroll" value="true"/>
   <preference name="AndroidLaunchMode" value="singleTop"/>
