@@ -12,6 +12,7 @@
   <preference name="android-minSdkVersion" value="21" />
   <preference name="android-targetSdkVersion" value="28" />
   <preference name="fullscreen" value="false" />
+  <preference name="StatusBarBackgroundColor" value="#ffffff" />
   <preference name="StatusBarStyle" value="lightcontent" />
   <preference name="orientation" value="portrait" />
   <plugin name="cordova-plugin-device" spec="1.1.7" />
