@@ -10,14 +10,11 @@
   <preference name="StatusBarBackgroundColor" value="#ffffff" />
   <preference name="AutoHideSplashScreen" value="false" />
   <preference name="DisallowOverscroll" value="true"/>
-  <preference name="AndroidLaunchMode" value="singleInstance"/>
+  <preference name="AndroidLaunchMode" value="singleTop"/>
   <preference name="android-minSdkVersion" value="21" />
   <preference name="android-targetSdkVersion" value="28" />
   <preference name="fullscreen" value="false" />
-  <preference name="orientation" value="portrait" />  
-  <universal-links>
-      <host name="*.vubingo.com" scheme="https" event="openedFromUrl" />
-  </universal-links>
+  <preference name="orientation" value="portrait" />
   <plugin name="cordova-plugin-device" spec="1.1.7" />
   <plugin name="cordova-plugin-dialogs" spec="1.3.4" />
   <plugin name="cordova-plugin-fullscreen" spec="1.1.0" />
@@ -134,19 +131,15 @@
       </edit-config>
       <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity">
           <activity android:theme="@style/Full"/>
+          <intent-filter android:autoVerify="true">
+              <action android:name="android.intent.action.VIEW" />
+              <category android:name="android.intent.category.DEFAULT" />
+              <category android:name="android.intent.category.BROWSABLE" />
+              <data android:scheme="app" android:host="vubingo" />
+          </intent-filter>
       </edit-config>
       <config-file parent="./application" target="AndroidManifest.xml">
           <meta-data android:name="android.max_aspect" android:value="5.0" />
-      </config-file>
-      <config-file parent="application" target="AndroidManifest.xml">
-          <activity android:label="webIntentFilter" android:name="vubingo.app">
-              <intent-filter android:autoVerify="true">
-                  <action android:name="android.intent.action.VIEW" />
-                  <category android:name="android.intent.category.DEFAULT" />
-                  <category android:name="android.intent.category.BROWSABLE" />
-                  <data android:host="vubingo.com" android:scheme="https" />
-              </intent-filter>
-          </activity>
       </config-file>
   </platform>
   <platform name="ios">
