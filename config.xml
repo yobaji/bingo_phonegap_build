@@ -124,12 +124,7 @@
   </platform>
   <config-file platform="android" parent="/manifest" mode="merge">
     <application android:theme="@android:style/Theme.NoTitleBar" >
-      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" >
-        <intent-filter>
-            <action android:name="android.intent.action.SEND" />
-            <category android:name="android.intent.category.DEFAULT" />         
-        </intent-filter>
-      </activity>
+      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" ></activity>
     </application>
   </config-file>
   <platform name="android">
@@ -139,6 +134,10 @@
       </edit-config>
       <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity">
           <activity android:theme="@style/Full"/>
+            <intent-filter>
+                <action android:name="android.intent.action.SEND" />
+                <category android:name="android.intent.category.DEFAULT" />         
+            </intent-filter>
       </edit-config>
       <config-file parent="./application" target="AndroidManifest.xml">
           <meta-data android:name="android.max_aspect" android:value="5.0" />
