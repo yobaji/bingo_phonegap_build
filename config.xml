@@ -131,15 +131,18 @@
       </edit-config>
       <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application/activity">
           <activity android:theme="@style/Full"/>
-          <intent-filter android:autoVerify="true">
+      </edit-config>
+      <config-file parent="./application" target="AndroidManifest.xml">
+          <meta-data android:name="android.max_aspect" android:value="5.0" />          
+          <activity android:name="MainActivity">
+            <intent-filter android:autoVerify="true">
               <action android:name="android.intent.action.VIEW" />
               <category android:name="android.intent.category.DEFAULT" />
               <category android:name="android.intent.category.BROWSABLE" />
-              <data android:scheme="app" android:host="vubingo" />
-          </intent-filter>
-      </edit-config>
-      <config-file parent="./application" target="AndroidManifest.xml">
-          <meta-data android:name="android.max_aspect" android:value="5.0" />
+              <data android:scheme="http" android:host="www.vubingo.com" />
+              <data android:scheme="https" />
+            </intent-filter>
+          </activity>
       </config-file>
   </platform>
   <platform name="ios">
