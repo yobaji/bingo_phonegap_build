@@ -29,7 +29,6 @@
                   parent: 'rooms'
                }
             }, function(match) {
-               alert(Store.state.appLinkRoomid);
                Store.state.appLinkRoomid = match.$args.roomId;
             }, function(nomatch) {
             });
