@@ -29,9 +29,10 @@
                   parent: 'rooms'
                }
             }, function(match) {
-               alert(match);
+               alert(match.$route);
+               alert(match.$args);
+               alert(match.$link);
             }, function(nomatch) {
-               alert(nomatch);
             });
          }
       </script>
