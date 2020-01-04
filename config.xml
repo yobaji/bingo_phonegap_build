@@ -10,7 +10,7 @@
   <preference name="StatusBarBackgroundColor" value="#ffffff" />
   <preference name="AutoHideSplashScreen" value="false" />
   <preference name="DisallowOverscroll" value="true"/>
-  <preference name="AndroidLaunchMode" value="singleTop"/>
+  <preference name="AndroidLaunchMode" value="singleInstance"/>
   <preference name="android-minSdkVersion" value="21" />
   <preference name="android-targetSdkVersion" value="28" />
   <preference name="fullscreen" value="false" />
