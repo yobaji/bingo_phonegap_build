@@ -124,7 +124,12 @@
   </platform>
   <config-file platform="android" parent="/manifest" mode="merge">
     <application android:theme="@android:style/Theme.NoTitleBar" >
-      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" ></activity>
+      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        <intent-filter>
+            <action android:name="android.intent.action.SEND" />
+            <category android:name="android.intent.category.DEFAULT" />         
+        </intent-filter>
+      </activity>
     </application>
   </config-file>
   <platform name="android">
