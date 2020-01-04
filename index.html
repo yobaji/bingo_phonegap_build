@@ -30,6 +30,7 @@
                }
             }, function(match) {
                Router.replace('/room/'+match.$args.roomId);
+               window.location.reload();
             }, function(nomatch) {
             });
          }
