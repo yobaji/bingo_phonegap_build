@@ -24,6 +24,9 @@
             StatusBar.styleDefault();
             Server.checkIfAppOutdated(AppVersion.build);
          }
+         universalLinks.subscribe('openedFromUrl', function (eventData) {
+            alert('Did launch application from the link: ' + eventData.url);
+         });
       </script>
    </body>
 </html>
