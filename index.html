@@ -23,6 +23,16 @@
             navigator.splashscreen.hide();
             StatusBar.styleDefault();
             Server.checkIfAppOutdated(AppVersion.build);
+            IonicDeeplink.route({
+               '/room/:roomId': {
+                  target: 'room',
+                  parent: 'rooms'
+               }
+            }, function(match) {
+               alert(match);
+            }, function(nomatch) {
+               alert(nomatch);
+            });
          }
       </script>
    </body>
