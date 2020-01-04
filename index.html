@@ -7,7 +7,7 @@
       <title>VU Bingo</title>
       <link href=css/app.fa8a3d31.css rel=preload as=style>
       <link href=css/chunk-vendors.18c93001.css rel=preload as=style>
-      <link href=js/app.2b673a65.js rel=preload as=script>
+      <link href=js/app.c4e863d5.js rel=preload as=script>
       <link href=js/chunk-vendors.922dc8ea.js rel=preload as=script>
       <link href=css/chunk-vendors.18c93001.css rel=stylesheet>
       <link href=css/app.fa8a3d31.css rel=stylesheet>
@@ -16,7 +16,7 @@
       <noscript><strong>We're sorry but bingo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
       <div id=app></div>
       <script src="cordova.js"></script>
-      <script src=js/chunk-vendors.922dc8ea.js></script><script src=js/app.2b673a65.js></script>
+      <script src=js/chunk-vendors.922dc8ea.js></script><script src=js/app.c4e863d5.js></script>
       <script type="text/javascript" charset="utf-8">
          document.addEventListener("deviceready", onDeviceReady, false);
          function onDeviceReady() {
@@ -29,7 +29,8 @@
                   parent: 'rooms'
                }
             }, function(match) {
-               window.appLinkRoomid = match.$args.roomId;
+               alert(Store.state.appLinkRoomid);
+               Store.state.appLinkRoomid = match.$args.roomId;
             }, function(nomatch) {
             });
          }
