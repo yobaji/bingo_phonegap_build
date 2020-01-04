@@ -29,9 +29,7 @@
                   parent: 'rooms'
                }
             }, function(match) {
-               alert(match.$route);
-               alert(match.$args.roomId);
-               alert(match.$link);
+               Server.joinBingoRoom(match.$args.roomId);
             }, function(nomatch) {
             });
          }
