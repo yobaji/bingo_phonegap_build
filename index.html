@@ -5,18 +5,18 @@
       <meta http-equiv="Content-Security-Policy" content="default-src *; style-src *  'unsafe-inline'; script-src *  'unsafe-inline'; media-src *">
       <meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=0,viewport-fit=cover">
       <title>VU Bingo</title>
-      <link href=css/app.fa8a3d31.css rel=preload as=style>
+      <link href=css/app.766cf009.css rel=preload as=style>
       <link href=css/chunk-vendors.18c93001.css rel=preload as=style>
-      <link href=js/app.2bd31f5b.js rel=preload as=script>
+      <link href=js/app.abe6d094.js rel=preload as=script>
       <link href=js/chunk-vendors.922dc8ea.js rel=preload as=script>
       <link href=css/chunk-vendors.18c93001.css rel=stylesheet>
-      <link href=css/app.fa8a3d31.css rel=stylesheet>
+      <link href=css/app.766cf009.css rel=stylesheet>
    </head>
    <body>
       <noscript><strong>We're sorry but bingo doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript>
       <div id=app></div>
       <script src="cordova.js"></script>
-      <script src=js/chunk-vendors.922dc8ea.js></script><script src=js/app.2bd31f5b.js></script>
+      <script src=js/chunk-vendors.922dc8ea.js></script><script src=js/app.abe6d094.js></script>
       <script type="text/javascript" charset="utf-8">
          document.addEventListener("deviceready", onDeviceReady, false);
          function onDeviceReady() {
@@ -36,8 +36,11 @@
             document.addEventListener("backbutton", onBackKeyDown, false);
          }
          function onBackKeyDown() {
-            alert('Back Button Disabled');
-            console.log('Back Button Disabled');
+            if(store.state.room.myRoom){
+               store.state.room.leaveRoomConfirmModal=!store.state.room.leaveRoomConfirmModal
+            }else{
+               navigator.app.exitApp();
+            }
          }
       </script>
    </body>
