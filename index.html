@@ -36,8 +36,8 @@
             document.addEventListener("backbutton", onBackKeyDown, false);
          }
          function onBackKeyDown() {
-            if(store.state.room.myRoom){
-               store.state.room.leaveRoomConfirmModal=!store.state.room.leaveRoomConfirmModal
+            if(Store.state.room.myRoom){
+               Store.state.room.leaveRoomConfirmModal=!Store.state.room.leaveRoomConfirmModal
             }else{
                navigator.app.exitApp();
             }
