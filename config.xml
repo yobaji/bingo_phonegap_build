@@ -124,6 +124,11 @@
   <platform name="android">
     <allow-intent href="market:*"/>
   </platform>
+  <config-file platform="android" parent="/manifest" mode="merge">
+    <application android:theme="@android:style/Theme.NoTitleBar" >
+      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" ></activity>
+    </application>
+  </config-file>
   <platform name="android">
       <resource-file src="www/styles.xml" target="app/src/main/res/values-v28/styles.xml" />
       <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
@@ -135,6 +140,18 @@
       <config-file parent="./application" target="AndroidManifest.xml">
           <meta-data android:name="android.max_aspect" android:value="5.0" />
       </config-file>
+      <custom-config-file target="AndroidManifest.xml" parent="./" mode="add">
+          <application android:name="vubingo">
+              <activity>              
+                <intent-filter android:autoVerify="true">
+                    <action android:name="android.intent.action.VIEW" />
+                    <category android:name="android.intent.category.DEFAULT" />
+                    <category android:name="android.intent.category.BROWSABLE" />
+                    <data android:scheme="https" android:host="www.vubingo.com" />
+                </intent-filter>
+              </activity>
+          </application>
+      </custom-config-file>
   </platform>
   <platform name="ios">
     <allow-intent href="itms:*"/>
