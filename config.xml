@@ -22,12 +22,12 @@
   <plugin name="cordova-plugin-inappbrowser" spec="1.7.2" />
   <plugin name="cordova-plugin-network-information" spec="1.3.4" />
   <plugin name="cordova-plugin-appversion" />
-  <gap:plugin name="ionic-plugin-deeplinks" source="npm">
+  <!-- <gap:plugin name="ionic-plugin-deeplinks" source="npm">
     <param name="URL_SCHEME" value="vubingo" />
     <param name="DEEPLINK_SCHEME" value="https" />
     <param name="DEEPLINK_HOST" value="www.vubingo.com" />
     <param name="ANDROID_PATH_PREFIX" value="/" />
-  </gap:plugin>
+  </gap:plugin> -->
   <plugin spec="https://github.com/goinnn/cordova-plugin-splashscreen.git#4.0.0#colors" source="git" />
   <plugin name="cordova-plugin-statusbar" spec="2.4.3" />
   <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
