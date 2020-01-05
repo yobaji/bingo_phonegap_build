@@ -33,6 +33,11 @@
                window.location.reload();
             }, function(nomatch) {
             });
+            document.addEventListener("backbutton", onBackKeyDown, false);
+         }
+         function onBackKeyDown() {
+            alert('Back Button Disabled');
+            console.log('Back Button Disabled');
          }
       </script>
    </body>
