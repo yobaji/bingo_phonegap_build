@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0" id="com.vubingo.www" version="4.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0" id="com.vubingo.www" version="5.0.0">
   <name>VU Bingo</name>
   <description>An Online Multiplayer Board Game to kill your free time with friends</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
@@ -22,12 +22,11 @@
   <plugin name="cordova-plugin-inappbrowser" spec="1.7.2" />
   <plugin name="cordova-plugin-network-information" spec="1.3.4" />
   <plugin name="cordova-plugin-appversion" />
-  <!-- <gap:plugin name="ionic-plugin-deeplinks" source="npm">
+  <gap:plugin name="ionic-plugin-deeplinks" source="npm">
     <param name="URL_SCHEME" value="vubingo" />
     <param name="DEEPLINK_SCHEME" value="https" />
     <param name="DEEPLINK_HOST" value="www.vubingo.com" />
-    <param name="ANDROID_PATH_PREFIX" value="/" />
-  </gap:plugin> -->
+  </gap:plugin>
   <plugin spec="https://github.com/goinnn/cordova-plugin-splashscreen.git#4.0.0#colors" source="git" />
   <plugin name="cordova-plugin-statusbar" spec="2.4.3" />
   <plugin name="cordova-plugin-whitelist" spec="1.3.4" />
@@ -126,18 +125,7 @@
   </platform>
   <config-file platform="android" parent="/manifest" mode="merge">
     <application android:theme="@android:style/Theme.NoTitleBar" >
-      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" > 
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN"/>
-                <category android:name="android.intent.category.LAUNCHER"/>
-            </intent-filter> 
-            <intent-filter android:autoVerify="true">
-                <action android:name="android.intent.action.VIEW" />
-                <category android:name="android.intent.category.DEFAULT" />
-                <category android:name="android.intent.category.BROWSABLE" />
-                <data android:scheme="https" android:host="www.vubingo.com" />
-            </intent-filter>
-      </activity>
+      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" ></activity>
     </application>
   </config-file>
   <platform name="android">
