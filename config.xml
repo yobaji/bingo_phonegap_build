@@ -128,16 +128,6 @@
       <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" ></activity>
     </application>
   </config-file>
-  <config-file parent="application" target="AndroidManifest.xml">
-      <activity android:label="webIntentFilter" android:name="vubingo.app">
-          <intent-filter android:autoVerify="true">
-              <action android:name="android.intent.action.VIEW" />
-              <category android:name="android.intent.category.DEFAULT" />
-              <category android:name="android.intent.category.BROWSABLE" />
-              <data android:scheme="https" android:host="www.vubingo.com" />
-          </intent-filter>
-      </activity>
-  </config-file>
   <platform name="android">
       <resource-file src="www/styles.xml" target="app/src/main/res/values-v28/styles.xml" />
       <edit-config file="AndroidManifest.xml" mode="merge" target="/manifest/application">
@@ -148,6 +138,9 @@
       </edit-config>
       <config-file parent="./application" target="AndroidManifest.xml">
           <meta-data android:name="android.max_aspect" android:value="5.0" />
+          <activity>
+            <intent-filter android:autoVerify="true"></intent-filter>
+          </activity>
       </config-file>
   </platform>
   <platform name="ios">
