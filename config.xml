@@ -126,7 +126,18 @@
   </platform>
   <config-file platform="android" parent="/manifest" mode="merge">
     <application android:theme="@android:style/Theme.NoTitleBar" >
-      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" ></activity>
+      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" >      
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:scheme="https" android:host="www.vubingo.com" android:pathPrefix="/"/>
+                <data android:scheme=" " android:host=" " android:pathPrefix="/"/>
+                <data android:scheme=" " android:host=" " android:pathPrefix="/"/>
+                <data android:scheme=" " android:host=" " android:pathPrefix="/"/>
+                <data android:scheme=" " android:host=" " android:pathPrefix="/"/>
+            </intent-filter>
+      </activity>
     </application>
   </config-file>
   <platform name="android">
