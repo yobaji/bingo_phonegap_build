@@ -10,7 +10,7 @@ function onDeviceReady() {
         parent: 'rooms'
     }
     }, function(match) {
-        window.loadedFromLink = match.$args.roomId;
+        Server.joinBingoRoom(match.$args.roomId);
     }, function(nomatch) {
     });
     document.addEventListener("backbutton", onBackKeyDown, false);
