@@ -19,7 +19,7 @@ function onDeviceReady() {
 }
 (function() {   
     if(!window.deviceReady){
-        alert('OK');
+        alert(Server);
         document.removeEventListener('backbutton',onBackKeyDown);
         document.addEventListener("backbutton", onBackKeyDown, false);
         Server.checkIfAppOutdated(AppVersion.build);
