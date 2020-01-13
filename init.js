@@ -16,6 +16,10 @@ function onDeviceReady() {
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
 function onBackKeyDown() {
+    if(Store.state.roomIdFromLink!==false){
+        Store.state.roomIdFromLink = false;
+        return;
+    }
     if(Store.state.howToPlayModal){
         Store.state.howToPlayModal = false;
         return;
