@@ -17,10 +17,13 @@ function onDeviceReady() {
     document.removeEventListener('backbutton',onBackKeyDown);
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
-(function() {    
-    alert();
-    document.removeEventListener('backbutton',onBackKeyDown);
-    document.addEventListener("backbutton", onBackKeyDown, false);
+(function() {   
+    if(!window.deviceReady){
+        alert('OK');
+        document.removeEventListener('backbutton',onBackKeyDown);
+        document.addEventListener("backbutton", onBackKeyDown, false);
+        Server.checkIfAppOutdated(AppVersion.build);
+    }
  })();
 function onBackKeyDown() {
     if(Store.state.howToPlayModal){
