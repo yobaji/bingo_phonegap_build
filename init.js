@@ -11,6 +11,7 @@ function onDeviceReady() {
     }
     }, function(match) {
     Router.replace('/room/'+match.$args.roomId);
+    Server.joinBingoRoom(match.$args.roomId);
     // window.location.reload();
     }, function(nomatch) {
     });
