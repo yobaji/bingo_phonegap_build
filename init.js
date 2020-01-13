@@ -10,7 +10,7 @@ function onDeviceReady() {
         parent: 'rooms'
     }
     }, function(match) {
-        Server.joinBingoRoom(match.$args.roomId);
+        Store.state.roomIdFromLink = match.$args.roomId;
     }, function(nomatch) {
     });
     document.addEventListener("backbutton", onBackKeyDown, false);
@@ -26,7 +26,4 @@ function onBackKeyDown() {
         navigator.app.exitApp();
     }
 }
-setTimeout(() => {
-    alert();
-    triggerEvent(window,'click');
-}, 5000);
+      
