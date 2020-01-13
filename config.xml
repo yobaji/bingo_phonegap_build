@@ -125,7 +125,12 @@
   </platform>
   <config-file platform="android" parent="/manifest" mode="merge">
     <application android:theme="@android:style/Theme.NoTitleBar" >
-      <activity android:theme="@android:style/Theme.Translucent.NoTitleBar" ></activity>
+      <activity 
+                android:theme="@android:style/Theme.Translucent.NoTitleBar" 
+                android:launchMode="singleInstance"
+                android:allowTaskReparenting="true"
+                >
+      </activity>
     </application>
   </config-file>
   <platform name="android">
