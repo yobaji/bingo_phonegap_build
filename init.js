@@ -11,10 +11,14 @@ function onDeviceReady() {
     }
     }, function(match) {
     Router.replace('/room/'+match.$args.roomId);
-    Server.joinBingoRoom(match.$args.roomId);
-    // window.location.reload();
+    window.location.reload();
     }, function(nomatch) {
     });
+    document.removeEventListener("backbutton",onBackKeyDown);
+    document.addEventListener("backbutton", onBackKeyDown, false);
+}
+function onLoad(){
+    document.removeEventListener("backbutton",onBackKeyDown);
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
 function onBackKeyDown() {
