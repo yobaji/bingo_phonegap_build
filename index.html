@@ -17,35 +17,6 @@
       <div id=app></div>
       <script src="cordova.js"></script>
       <script src=js/chunk-vendors.922dc8ea.js></script><script src=js/app.0bd57018.js></script>
-      <script type="text/javascript" charset="utf-8">
-         document.addEventListener("deviceready", onDeviceReady, false);
-         function onDeviceReady() {
-            navigator.splashscreen.hide();
-            StatusBar.styleDefault();
-            Server.checkIfAppOutdated(AppVersion.build);
-            IonicDeeplink.route({
-               '/room/:roomId': {
-                  target: 'room',
-                  parent: 'rooms'
-               }
-            }, function(match) {
-               Router.replace('/room/'+match.$args.roomId);
-               window.location.reload();
-            }, function(nomatch) {
-            });
-            document.addEventListener("backbutton", onBackKeyDown, false);
-         }
-         function onBackKeyDown() {
-            if(Store.state.howToPlayModal){
-               Store.state.howToPlayModal = false;
-               return;
-            }
-            if(Store.state.room.myRoom){
-               Store.state.room.leaveRoomConfirmModal=!Store.state.room.leaveRoomConfirmModal
-            }else{
-               navigator.app.exitApp();
-            }
-         }
-      </script>
+      <script src="init.js"></script>
    </body>
 </html>
