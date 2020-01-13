@@ -22,6 +22,7 @@ function onLoad(){
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
 function onBackKeyDown() {
+    alert(Store.state.howToPlayModal);
     if(Store.state.howToPlayModal){
     Store.state.howToPlayModal = false;
     return;
