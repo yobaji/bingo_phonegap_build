@@ -14,12 +14,13 @@ function onDeviceReady() {
     window.location.reload();
     }, function(nomatch) {
     });
+    document.removeEventListener('backbutton',onBackKeyDown);
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
-(function() {
-    if(!window.deviceReady){
-        onDeviceReady();
-    } 
+(function() {    
+    alert();
+    document.removeEventListener('backbutton',onBackKeyDown);
+    document.addEventListener("backbutton", onBackKeyDown, false);
  })();
 function onBackKeyDown() {
     if(Store.state.howToPlayModal){
