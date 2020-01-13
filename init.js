@@ -20,10 +20,11 @@ function onBackKeyDown() {
     Store.state.howToPlayModal = false;
     return;
     }
+    alert(Store.state.room.myRoom);
     if(Store.state.room.myRoom){
     Store.state.room.leaveRoomConfirmModal=!Store.state.room.leaveRoomConfirmModal
     }else{
-    navigator.app.exitApp();
+    // navigator.app.exitApp();
     }
 }
       
