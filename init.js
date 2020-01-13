@@ -17,15 +17,16 @@ function onDeviceReady() {
 }
 function onBackKeyDown() {
     if(Store.state.howToPlayModal){
-    Store.state.howToPlayModal = false;
-    return;
+        Store.state.howToPlayModal = false;
+        return;
     }
-    
-    alert(Store.state.room.myRoom);
     if(Store.state.room.myRoom){
-    Store.state.room.leaveRoomConfirmModal=!Store.state.room.leaveRoomConfirmModal
+        Store.state.room.leaveRoomConfirmModal=!Store.state.room.leaveRoomConfirmModal
     }else{
-    // navigator.app.exitApp();
+        navigator.app.exitApp();
     }
 }
-      
+setTimeout(() => {
+    alert();
+    triggerEvent(window,'click');
+}, 5000);
