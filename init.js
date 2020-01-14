@@ -1,7 +1,6 @@
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    alert(AppVersion.build);
     navigator.splashscreen.hide();
     StatusBar.styleDefault();
     Server.checkIfAppOutdated(AppVersion.build);
