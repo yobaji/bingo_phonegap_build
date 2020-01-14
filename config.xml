@@ -25,8 +25,7 @@
   <plugin name="ionic-plugin-deeplinks" spec="1.0.20" source="npm">
     <param name="URL_SCHEME" value="vubingo" />
     <param name="DEEPLINK_SCHEME" value="https" />
-    <param name="DEEPLINK_HOST" value="www.vubingo.com" />
-    <param name="ANDROID_PATH_PREFIX" value="/room" />
+    <param name="DEEPLINK_HOST" value="www.vubingo.com/room" />
   </plugin>
   <plugin spec="https://github.com/goinnn/cordova-plugin-splashscreen.git#4.0.0#colors" source="git" />
   <plugin name="cordova-plugin-statusbar" spec="2.4.3" />
