@@ -1,9 +1,7 @@
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    setTimeout(() => {
-        alert(window.Store);
-    }, 5000);
+    alert(cordova);
     navigator.splashscreen.hide();
     StatusBar.styleDefault();
     Server.checkIfAppOutdated(AppVersion.build);
