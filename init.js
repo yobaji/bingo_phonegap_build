@@ -1,7 +1,9 @@
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    alert(window.Store);
+    setTimeout(() => {
+        alert(window.Store);
+    }, 5000);
     navigator.splashscreen.hide();
     StatusBar.styleDefault();
     Server.checkIfAppOutdated(AppVersion.build);
@@ -17,7 +19,6 @@ function onDeviceReady() {
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
 function onBackKeyDown() {
-    alert();return;
     if(Store.state.roomIdFromLink!==false){
         Store.state.roomIdFromLink = false;
         return;
