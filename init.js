@@ -1,7 +1,7 @@
 
 document.addEventListener("deviceready", onDeviceReady, false);
 function onDeviceReady() {
-    alert(cordova);
+    alert(window.AppVersion);
     navigator.splashscreen.hide();
     StatusBar.styleDefault();
     Server.checkIfAppOutdated(AppVersion.build);
