@@ -12,6 +12,7 @@ function onDeviceReady() {
     }, function(match) {
         Store.state.roomIdFromLink = match.$args.roomId;
     }, function(nomatch) {
+        alert(nomatch);
     });
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
