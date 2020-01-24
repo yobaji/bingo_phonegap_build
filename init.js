@@ -12,7 +12,12 @@ function onDeviceReady() {
     }, function(match) {
         Store.state.roomIdFromLink = match.$args.roomId;
     }, function(nomatch) {
-        alert(nomatch.$link.url);
+        var link = nomatch.$link.url;
+        if(link.indexOf('room')>=0){
+            var roomId = link.replace(/.*room\//g,'');
+            roomId = roomId.replace(/\/.*/g,'');
+            Store.state.roomIdFromLink = roomId;
+        }
     });
     document.addEventListener("backbutton", onBackKeyDown, false);
 }
