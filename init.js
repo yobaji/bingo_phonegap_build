@@ -13,10 +13,12 @@ function onDeviceReady() {
         Store.state.roomIdFromLink = match.$args.roomId;
     }, function(nomatch) {
         var link = nomatch.$link.url;
-        if(link.indexOf('room')>=0){
+        if(link.indexOf('vubingo.com/room/')>=0){
             var roomId = link.replace(/.*room\//g,'');
             roomId = roomId.replace(/\/.*/g,'');
             Store.state.roomIdFromLink = roomId;
+        }else{
+            Store.state.invalidLink=link;
         }
     });
     document.addEventListener("backbutton", onBackKeyDown, false);
