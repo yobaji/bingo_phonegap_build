@@ -17,7 +17,7 @@ function onDeviceReady() {
             var roomId = link.replace(/.*room\//g,'');
             roomId = roomId.replace(/\/.*/g,'');
             Store.state.roomIdFromLink = roomId;
-        }else{
+        }else if(link.replace(/.*vubingo.com/g,'').length>1){
             Store.state.invalidLink=link;
         }
     });
