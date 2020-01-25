@@ -1,4 +1,4 @@
-<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0" id="com.vubingo.www" version="5.0.0">
+<widget xmlns="http://www.w3.org/ns/widgets" xmlns:android="http://schemas.android.com/apk/res/android" xmlns:gap="http://phonegap.com/ns/1.0" id="com.vubingo.www" version="6.0.0">
   <name>VU Bingo</name>
   <description>An Online Multiplayer Board Game to kill your free time with friends</description>
   <author href="http://phonegap.com" email="support@phonegap.com">PhoneGap Team</author>
