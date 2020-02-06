@@ -128,7 +128,7 @@
   <config-file platform="android" parent="/manifest" mode="merge">
     <application android:theme="@android:style/Theme.NoTitleBar" >
       <activity 
-                android:theme="@style/Transparent" 
+                android:theme="@android:style/Theme.AppCompat.Light.NoActionBar" 
                 android:launchMode="singleInstance"
                 android:allowTaskReparenting="true"
                 >
